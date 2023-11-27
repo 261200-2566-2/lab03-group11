@@ -1,4 +1,5 @@
-public class RPGcharacters extends Sword {
+public class RPGcharacters   {
+    double speed;
     String name;
     int level = 1;
     double maxHP;
@@ -7,10 +8,11 @@ public class RPGcharacters extends Sword {
     double mana;
     double baseRunSpeed;
     double maxRunSpeed;
-
+    double money;
+    double def;
+    double atk;
 
     RPGcharacters (String[] Hero){
-        super(Hero);
         this.name = Hero[0];
         this.maxHP = Double.parseDouble(Hero[1]);
         this.maxMana = Double.parseDouble(Hero[2]);
@@ -23,17 +25,28 @@ public class RPGcharacters extends Sword {
         System.out.println("///////////////////////////////////////////");
         System.out.println("your Name is: " + name );
         System.out.println("your HP is: " + hp );
-        System.out.println("your defense is: " + getShieldDDef() );
-        System.out.println("your Attack is: " + getSwordDamage() );
+        System.out.println("your defense is: " + def );
+        System.out.println("your Damage is: " + atk );
         System.out.println("your Mana is: " + mana );
-        System.out.println("your move speed is: " + maxRunSpeed );
+        System.out.println("your move speed is: " + speed);
         System.out.println("your level: " + level);
         System.out.println("///////////////////////////////////////////");
+
     }
+    public void setAtk(double atkEquip ){
+        atk = atkEquip;
+
+    }
+    public void setDef(double defEquip){
+        def= defEquip;
+    }
+    public void setSpeed(double speedEquip){
+        speed = (baseRunSpeed*(0.9+0.03*level))+speedEquip;
+    }
+
 
     public void update() {
         hp = maxHP;
         mana = maxMana;
-        maxRunSpeed = baseRunSpeed*(0.9+0.03*level);
     }
 }

@@ -7,12 +7,12 @@ public class Shield {
 
     Shield (String[] shield){
         this.nameShield = shield[0];
-        this.shieldBaseDef = Double.parseDouble(shield[2]);
-        this.runSpeedDecreaseShield = Double.parseDouble(shield[3]);
+        this.shieldBaseDef = Double.parseDouble(shield[1]);
+        this.runSpeedDecreaseShield = Double.parseDouble(shield[2]);
     }
 
     public double getShieldDef() {
-        shieldDef = shieldBaseDef*(1+0.05*levelShield);
+        shieldDef = shieldBaseDef*(0.8+0.05*levelShield);
         return shieldDef;
     }
 
