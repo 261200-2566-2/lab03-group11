@@ -61,7 +61,7 @@ public class Main {
             } else {
                 System.out.println("Equipment RightHand not found");
             }
-        } while (!shieldName.equals("Sheild") && !shieldName.equals("Pan"));
+        } while (!shieldName.equals("Shield") && !shieldName.equals("Pan"));
         scanner.close();
 
         hero.status();
