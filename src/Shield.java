@@ -8,7 +8,7 @@ public class Shield {
     Shield (String[] shield){
         this.nameShield = shield[0];
         this.shieldBaseDef = Double.parseDouble(shield[2]);
-        this.runSpeedDecreaseShield = Double.parseDouble(shield[3]));
+        this.runSpeedDecreaseShield = Double.parseDouble(shield[3]);
     }
 
     public double getShieldDef() {
