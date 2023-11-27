@@ -34,6 +34,6 @@ public class RPGcharacters extends Sword {
     public void update() {
         hp = maxHP;
         mana = maxMana;
-        maxRunSpeed = baseRunSpeed*(1+0.03*level);
+        maxRunSpeed = baseRunSpeed*(0.9+0.03*level);
     }
 }

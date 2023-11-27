@@ -11,7 +11,7 @@ public class Main {
     String[] dagger = {"dagger", "20", "0", "0.6"};
     String[] knife = {"knife", "15", "0", "0.3"};
 
-    String[] shield = {"sheild", "0", "10", "10"};
+    String[] shield = {"sheild", "0", "10", "3"};
     String[] pan = {"pan", "0", "5", "1"};
 
     public static void main(String[] args) {

@@ -9,7 +9,7 @@ public class Sword extends Shield {
         super(sword);
         this.nameSword = sword[0];
         this.swordBaseDamage = Double.parseDouble(sword[1]);
-        this.runSpeedDecreaseSword = Double.parseDouble(sword[3])*(0.1+0.04*levelSword);
+        this.runSpeedDecreaseSword = Double.parseDouble(sword[3])*(0.1+0.03*levelSword);
     }
 
     public double getSwordDamage() {
