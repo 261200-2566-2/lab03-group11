@@ -1,0 +1,63 @@
+characters stat
+
+unjiMan---> maxHP=100,maxMana=60,baseRunSpeed=10
+spermMan---> maxHP=110,maxMana=50,baseRunSpeed=10
+pennisMan---> maxHP=90,maxMana=70,baseRunSpeed=12
+
+
+SwordStat
+
+sword---> Damage=25,RunSpeedDecrease=-1
+dagger---> Damage=20,RunSpeedDecrease=-0.6
+knife---> Damage=15,RunSpeedDecrease=-0.3
+
+ShieldStat
+
+shield---> Defense=10,RunSpeedDecrease=-2
+pan---> Defense=5,RunSpeedDecrease=-1
+
+
+
+how and where to store data
+ANS store data in array in class.java
+
+what operations are needed
+Ans public double getShieldDef(), 
+public double getRunSpeedDecreaseShield(), 
+public double getSwordDamage(),
+public void setAtk(double atkEquip),
+public void setDef(double defEquip),
+public void setSpeed(double speedEquip),
+public void update() 
+void status(),
+
+how and where to compute information
+Ans public double getShieldDef() --->   shieldDef = shieldBaseDef*(1+0.05*levelShield);
+                                         return shieldDef;  in Shield.java
+
+public double getRunSpeedDecreaseShield() ---> return runSpeedDecreaseShield; in Shield.java
+
+public double getSwordDamage() ---> swordDamage = swordBaseDamage * (1 * (0.1 + levelSword));
+                                    return swordDamage; in Sword.java
+
+
+public void setAtk(double atkEquip) ---> atk = atkEquip; in RPGcharacters.java
+
+public void setDef(double defEquip) ---> def= defEquip; in RPGcharacters.java
+
+public void setSpeed(double speedEquip) ---> speed = (baseRunSpeed*(0.9+0.03*level))+speedEquip; in RPGcharacters.java
+
+public void update() --->  hp = maxHP;
+        		   mana = maxMana; in RPGcharacters.java
+
+void status() --->  update();
+        System.out.println("///////////////////////////////////////////");
+        System.out.println("your Name is: " + name );
+        System.out.println("your HP is: " + hp );
+        System.out.println("your defense is: " + def );
+        System.out.println("your Attack is: " + atk );
+        System.out.println("your Mana is: " + mana );
+        System.out.println("your move speed is: " + speed);
+        System.out.println("your level: " + level);
+        System.out.println("///////////////////////////////////////////"); in RPGcharacters.java
+    
