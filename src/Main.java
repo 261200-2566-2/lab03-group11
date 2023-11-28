@@ -85,7 +85,6 @@ public class Main {
         System.out.println("///////////Shield/////////////");
         System.out.println("Shield Def:10 RunSpeedDecrease:2");
         System.out.println("Pan Def:5 RunSpeedDecrease:1");
-        System.out.println(" ");
         do {
             System.out.print("Choose Equipment RightHand(Shield, Pan): ");
             shieldName = scanner.next();
