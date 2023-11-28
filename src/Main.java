@@ -12,7 +12,7 @@ public class Main {
     String[] knife = {"knife", "15", "-0.3"};
 
 //    String[] nameShield = {"NameEquip", "Def", "RunSpeedDecrease"};
-    String[] shield = {"sheild", "10", "-2"};
+    String[] shield = {"shield", "10", "-2"};
     String[] pan = {"pan", "5", "-1"};
 
     public static void main(String[] args) {
@@ -32,6 +32,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String name;
         RPGcharacters hero = null;
+        System.out.println("///////////Heroes/////////////");
+        System.out.println("UnjiMan HP:100 Mana:60 RunSpeed:10");
+        System.out.println("SpermMan HP:110 Mana:50 RunSpeed:10");
+        System.out.println("PennisMan HP:90 Mana:70 RunSpeed:12");
         do {
             System.out.print("Choose Hero(UnjiMan, SpermMan, PennisMan): ");
             name = scanner.next();
@@ -52,6 +56,11 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String swordName;
         Sword useSword = null;
+        System.out.println(" ");
+        System.out.println("///////////Sword/////////////");
+        System.out.println("Sword Damage:25 RunSpeedDecrease:1");
+        System.out.println("Dagger Damage:20 RunSpeedDecrease:0.6");
+        System.out.println("Knife Damage:15 RunSpeedDecrease:0.3");
         do {
             System.out.print("Choose Equipment LeftHand(Sword, Dagger, Knife): ");
             swordName = scanner.next();
@@ -72,6 +81,11 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String shieldName;
         Shield useShield = null;
+        System.out.println(" ");
+        System.out.println("///////////Shield/////////////");
+        System.out.println("Shield Def:10 RunSpeedDecrease:2");
+        System.out.println("Pan Def:5 RunSpeedDecrease:1");
+        System.out.println(" ");
         do {
             System.out.print("Choose Equipment RightHand(Shield, Pan): ");
             shieldName = scanner.next();
